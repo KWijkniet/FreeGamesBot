@@ -7,27 +7,16 @@ const config = require("../config.json");
 const toolkit = require("../Toolkit.js");
 
 module.exports = {
-  // getId: function (message) {
-  //   if(!toolkit.hasPermissions(message)){
-  //     message.reply("Sorry! You dont have permission to use this command!");
-  //     return;
-  //   }
-      
-  //   var args = toolkit.getArguments(message);
-  //   if(args.length != 1){
-  //     invalidArguments(message, config.prefix + "getId [server/channel]");
-  //     return;
-  //   }
-
-  //   if (args[0] == "server") {
-  //     message.reply("Server ID: " + message.guildId);
-  //   }
-  //   else if (args[0] == "channel") {
-  //     message.reply("Channel ID: " + message.channelId);
-  //   }
-  //   else {
-  //     message.reply("Unknown argument: " + args[0]);
-  //   }
-  //   console.log(message.content);
-  // },
+	free: function(message){
+		if(toolkit.hasRole(message, "Tag Me")){
+			message.reply("Sorry but you are not permitted to use this command. To use this command you must be a Trusted Member");
+			return;
+		}
+		
+		var args = toolkit.getArguments(message);
+		if(args.length != 0){
+			invalidArguments(message, config.prefix + "free [epic/steam/humble/other/sale] [url]");
+			return;
+		}
+	},
 }

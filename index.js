@@ -1,5 +1,8 @@
 const http = require("http");
-http.createServer((_, res) => res.end("Alive")).listen(8080)
+http.createServer((_, res) => res.end("Alive")).listen(8080);
+
+//Test
+require("./test.js");
 
 //require the necessary discord.js classes
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
@@ -19,37 +22,38 @@ var Admin = require('./Commands/Admin.js');
 var Roles = require('./Commands/Roles.js');
 
 const commands = [
-  ["help", Help.help],
-  ["subscribe", Roles.subscribe],
-  ["unsubscribe", Roles.unsubscribe],
+  	["help", Help.help],
+  	["subscribe", Roles.subscribe],
+  	["unsubscribe", Roles.unsubscribe],
+	["free", Admin.free],
 ];
 
 client.once("ready", () => {
-  console.log("The bot is running. Press CTRL + C to stop the bot.");
-  client.user.setUsername(config.botName);
-  client.user.setActivity(">help", { type: "LISTENING" });
+	console.log("The bot is running. Press CTRL + C to stop the bot.");
+	client.user.setUsername(config.botName);
+	client.user.setActivity(">help", { type: "LISTENING" });
 });
 
 client.on('messageCreate', message => {
-  //if the message came from this bot then dont check this message for commands
-  if (message.author.tag == client.user.tag){
-    return;
-  }
-
-  //check if it is a command
-  if (message.content.startsWith(prefix)){
-    console.log(message.author.tag + " send message in " + message.channel.name + ": " + message.content);
-
-    for (var i = 0; i < commands.length; i++){
-      var command = commands[i];
-      if (message.content.startsWith(prefix + command[0])) {
-        //found command
-        command[1](message);
-        return;
-      }
-    }
-    message.reply("Unknown command. Please type " + prefix + "help for all the commands");
-  }
+	//if the message came from this bot then dont check this message for commands
+	if (message.author.tag == client.user.tag){
+		return;
+	}
+	
+	//check if it is a command
+	if (message.content.startsWith(prefix)){
+		console.log(message.author.tag + " send message in " + message.channel.name + ": " + message.content);
+		
+		for (var i = 0; i < commands.length; i++){
+			var command = commands[i];
+			if (message.content.startsWith(prefix + command[0])) {
+				//found command
+				command[1](message);
+				return;
+			}
+		}
+		//message.reply("Unknown command. Please type " + prefix + "help for all the commands");
+	}
 });
 
 client.login(token.token);
