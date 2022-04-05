@@ -1,3 +1,6 @@
+const http = require("http");
+http.createServer((_, res) => res.end("Alive")).listen(8080)
+
 //require the necessary discord.js classes
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 
