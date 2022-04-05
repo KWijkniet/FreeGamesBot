@@ -1,12 +1,8 @@
 const http = require("http");
 http.createServer((_, res) => res.end("Alive")).listen(8080);
 
-//Test
-require("./test.js");
-
 //require the necessary discord.js classes
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
-
 //create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
@@ -14,6 +10,9 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const config = require("./Config/config.json");
 const secret = require("./Config/secret.json");
 const prefix = config.prefix;
+
+// from toolkit
+const Epic = require("./Sources/EpicGames.js");
 
 //commands
 var Fun = require('./Commands/Fun.js');
@@ -55,5 +54,10 @@ client.on('messageCreate', message => {
 		//message.reply("Unknown command. Please type " + prefix + "help for all the commands");
 	}
 });
+
+//Auto check the websites for new free games
+setInterval(()=>{
+	Epic.checkFreeGames();
+}, 1000 * 60 * 60 * 1) // each hour
 
 client.login(secret.token);

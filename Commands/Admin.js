@@ -3,7 +3,7 @@ const { MessageEmbed, Permissions } = require("discord.js");
 const { invalidArguments } = require("../Toolkit.js");
 
 // from settings
-const config = require("../config.json");
+const config = require("../Config/config.json");
 const toolkit = require("../Toolkit.js");
 
 module.exports = {

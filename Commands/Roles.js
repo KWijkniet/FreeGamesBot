@@ -1,9 +1,6 @@
 // Require the necessary discord.js classes
 const { MessageEmbed } = require("discord.js");
 
-// from settings
-const config = require("../Config/config.json");
-
 module.exports = {
   //Command: subscribe
   subscribe: function (message) {
