@@ -1,0 +1,5 @@
+{
+  "botName": "FreeGamesBot",
+  "link": "https://discord.com/api/oauth2/authorize?client_id=960677314465783858&permissions=8&scope=bot",
+  "prefix": ">"
+}
