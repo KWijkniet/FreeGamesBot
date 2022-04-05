@@ -2,7 +2,7 @@
 const { MessageEmbed } = require("discord.js");
 
 // from settings
-const config = require("../config.json");
+const config = require("../Config/config.json");
 
 module.exports = {
 	//Command: help

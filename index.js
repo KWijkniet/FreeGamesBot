@@ -11,8 +11,8 @@ const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 // from settings
-const config = require("./config.json");
-const token = require("./token.json");
+const config = require("./Config/config.json");
+const secret = require("./Config/secret.json");
 const prefix = config.prefix;
 
 //commands
@@ -56,4 +56,4 @@ client.on('messageCreate', message => {
 	}
 });
 
-client.login(token.token);
+client.login(secret.token);

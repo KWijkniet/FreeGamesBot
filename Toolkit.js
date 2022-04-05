@@ -1,5 +1,6 @@
 // require the necessary discord.js classes
 const { Permissions } = require("discord.js");
+const secret = require("./Config/secret.json");
 
 // require Axios
 const axios = require('axios').default;
@@ -24,9 +25,8 @@ module.exports = {
 	return message.member.roles.cache.find(r => r.name === targetRoleName) != null;
   },
   getEpicGames: function(){
-
 	return new Promise((res, rej) => {
-		axios.get('https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=NL&allowCountries=NL')
+		axios.get(secret.epic_url)
 		.then((response) => {
 			var returnData = [];
 			var data = response.data;
@@ -50,16 +50,6 @@ module.exports = {
 		.catch((err) =>{
 			rej(err);
 		})
-	});
-	  
-	//https://store.epicgames.com/en-US/free-games
-	axios.get('https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=NL&allowCountries=NL')
-	.then(function (response) {
-		
-	})
-	.catch(function (error) {
-		console.log(error);
-		return "Error";
 	});
   },
 }
