@@ -1,0 +1,2 @@
+{"title":"City of Brass","originalPrice":1599,"discountedPrice":0,"slug":"city-of-brass/home","image":"https://cdn1.epicgames.com/undefined/offer/EGS_DEVELOPER_CITYOFBRASS_S1_DESCRIPTION-2560x1440-3e755e7016659f4e23e513a4042fb61e.jpg"}
+{"title":"Total War: WARHAMMER","originalPrice":5999,"discountedPrice":0,"slug":"total-war-warhammer","image":"https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_TotalWarWARHAMMER_CREATIVEASSEMBLY_S6_1200x1600-3e82a2d0de323e3de30f4ff4989a5c15"}

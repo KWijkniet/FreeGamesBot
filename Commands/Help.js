@@ -15,6 +15,8 @@ module.exports = {
 			.addField(config.prefix + "unsubscribe", "Stop receiving pings when free games are posted.", true)
 			.addField("Trusted Members", "These commands are only available to trusted members", false)
 			.addField(config.prefix + "free [epic/steam/humble/other/sale] [url]", "Post a free game", true)
+			.addField("Administrators", "These commands are only available to the administrator", false)
+			.addField(config.prefix + "triggerForceCheck", "Triggers the bot to search the web for free games", true)
 			.setTimestamp();
 		message.channel.send({ embeds: [embed] });
 	},

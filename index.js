@@ -4,18 +4,15 @@ http.createServer((_, res) => res.end("Alive")).listen(8080);
 //require the necessary discord.js classes
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 //create a new client instance
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 // from settings
 const config = require("./Config/config.json");
 const secret = require("./Config/secret.json");
 const prefix = config.prefix;
 
-// from toolkit
-const Epic = require("./Sources/EpicGames.js");
-
 //commands
-var Fun = require('./Commands/Fun.js');
+//var Fun = require('./Commands/Fun.js');
 var Help = require('./Commands/Help.js');
 var Admin = require('./Commands/Admin.js');
 var Roles = require('./Commands/Roles.js');
@@ -25,6 +22,7 @@ const commands = [
   	["subscribe", Roles.subscribe],
   	["unsubscribe", Roles.unsubscribe],
 	["free", Admin.free],
+	["triggerForceCheck", Admin.triggerForceCheck],
 ];
 
 client.once("ready", () => {
@@ -57,7 +55,7 @@ client.on('messageCreate', message => {
 
 //Auto check the websites for new free games
 setInterval(()=>{
-	Epic.checkFreeGames();
+	Admin.forceCheck();
 }, 1000 * 60 * 60 * 1) // each hour
 
 client.login(secret.token);
