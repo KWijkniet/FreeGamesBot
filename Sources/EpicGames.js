@@ -1,6 +1,5 @@
 // Require the necessary discord.js classes
 const { MessageEmbed } = require("discord.js");
-const metaFetcher = require('meta-fetcher');
 
 // require Axios
 const axios = require('axios').default;

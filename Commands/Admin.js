@@ -6,7 +6,7 @@ const { invalidArguments, hasPermissions } = require("../Toolkit.js");
 const config = require("../Config/config.json");
 const toolkit = require("../Toolkit.js");
 
-// from toolkit
+// sources
 const Epic = require("../Sources/EpicGames.js");
 
 module.exports = {
@@ -17,10 +17,16 @@ module.exports = {
 		}
 		
 		var args = toolkit.getArguments(message);
-		if(args.length != 0){
+		if(args.length != 2){
 			invalidArguments(message, config.prefix + "free [epic/steam/humble/other/sale] [url]");
 			return;
 		}
+
+		var source = args[0];
+		var url = args[1];
+
+		var channel = null;
+		if(source == "epic"){ channel = client.channels.cache.get(secret.epic_channel)}
 	},
 	forceCheck: function(){
 		Epic.checkFreeGames();
