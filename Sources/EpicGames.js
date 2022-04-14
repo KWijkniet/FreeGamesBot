@@ -19,6 +19,7 @@ module.exports = {
 					lines = data.split("\n");
 				}
 
+				var hasTagged = false;
 				for (var r = 0; r < games.length; r++) {
 					var game = games[r];
 					var hasFound = false;
@@ -33,6 +34,11 @@ module.exports = {
 					}
 
 					if (!hasFound) {
+						if(hasTagged == false){
+							hasTagged = true;
+							client.channels.cache.get(secret.epic_channel).send("<@&" + secret.tag_role_id + ">");
+						}
+						
 						var url = secret.epic_base + game["slug"];
 
 						const embed = new MessageEmbed()
@@ -58,13 +64,12 @@ module.exports = {
 				var items = data["data"]["Catalog"]["searchStore"]["elements"];
 				for (var i = 0; i < items.length; i++) {
 					var elem = items[i];
-
 					var priceData = elem["price"]["totalPrice"];
 					var result = {
 						"title": elem["title"],
 						"originalPrice": priceData["originalPrice"],
 						"discountedPrice": priceData["discountPrice"],
-						"slug": elem["productSlug"],
+						"slug": elem["productSlug"] != null && elem["productSlug"].length > 0 ? elem["productSlug"] : elem["offerMappings"][0]["pageSlug"],
 						"image": elem["keyImages"][0]["url"],
 					}
 
