@@ -22,13 +22,23 @@ const commands = [
   	["subscribe", Roles.subscribe],
   	["unsubscribe", Roles.unsubscribe],
 	["free", Admin.free],
-	["triggerForceCheck", Admin.triggerForceCheck],
+	["forceCheck", Admin.triggerForceCheck],
 ];
 
+//On bot ready
 client.once("ready", () => {
 	console.log("The bot is running. Press CTRL + C to stop the bot.");
 	client.user.setUsername(config.botName);
 	client.user.setActivity(">help", { type: "LISTENING" });
+});
+
+//On user join
+client.on('guildMemberAdd', member => {
+    client.channels.cache.get(secret.welcome_channel_id).send("Welcome <@" + member.id + ">! Enjoy the free games"); 
+});
+
+client.on('guildMemberRemove', member => {
+    client.channels.cache.get(secret.welcome_channel_id).send("I am sad to announce that <@" + member.id + "> has left this server"); 
 });
 
 client.on('messageCreate', message => {
@@ -44,6 +54,12 @@ client.on('messageCreate', message => {
 		for (var i = 0; i < commands.length; i++){
 			var command = commands[i];
 			if (message.content.startsWith(prefix + command[0])) {
+				//check if the command was send in the correct server
+				if(message.guild.id != secret.server_id){
+					message.reply("Sorry. This bot can only be used in the 'Free Games' discord server: " + secret.server_url);
+					return;
+				}
+				
 				//found command
 				command[1](message);
 				return;
