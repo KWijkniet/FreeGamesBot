@@ -12,7 +12,7 @@ const Epic = require("../Sources/EpicGames.js");
 
 module.exports = {
 	free: function(message){
-		if(toolkit.hasRole(message, "Tag Me")){
+		if(!toolkit.hasRole(message, "Trusted Member")){
 			message.reply("Sorry but you are not permitted to use this command. To use this command you must be a Trusted Member");
 			return;
 		}

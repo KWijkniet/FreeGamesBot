@@ -39,7 +39,7 @@ module.exports = {
 							client.channels.cache.get(secret.epic_channel).send("<@&" + secret.tag_role_id + ">");
 						}
 						
-						var url = secret.epic_base + game["slug"];
+						var url = (game.type == "bundle" ? secret.epic_base_bundle : secret.epic_base_game) + game["slug"];
 
 						const embed = new MessageEmbed()
 							.setTitle(game["title"])
@@ -71,9 +71,13 @@ module.exports = {
 						"discountedPrice": priceData["discountPrice"],
 						"slug": elem["productSlug"] != null && elem["productSlug"].length > 0 ? elem["productSlug"] : elem["offerMappings"][0]["pageSlug"],
 						"image": elem["keyImages"][0]["url"],
+						"type": elem["offerType"],
 					}
 
 					if (result.originalPrice > 0 && result.discountedPrice == 0) {
+						returnData.push(result);
+					}
+					else if (items.length <= 6 && elem["promotions"]["promotionalOffers"].length > 0) {
 						returnData.push(result);
 					}
 				}

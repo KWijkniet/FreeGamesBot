@@ -6,6 +6,9 @@ const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 //create a new client instance
 global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
+const toolkit = require("./Toolkit.js");
+const fs = require("fs");
+
 // from settings
 const config = require("./Config/config.json");
 const secret = require("./Config/secret.json");
@@ -59,6 +62,20 @@ client.on('messageCreate', message => {
 					message.reply("Sorry. This bot can only be used in the 'Free Games' discord server: " + secret.server_url);
 					return;
 				}
+
+				//Log command
+				
+				fs.readFile("Logs/Log.txt", 'utf8', (err2, data) => {
+					var lines = [];
+					if (data != null && data.length > 0) {
+						lines = data.split("\n");
+					}
+					lines.push(toolkit.getTime() + " [" + message.author.username + "]: " + message.content);
+					
+					fs.writeFile('Logs/Log.txt', lines.join("\n"), (err) => {
+						if (err) console.log(err);
+					});
+				});
 				
 				//found command
 				command[1](message);
