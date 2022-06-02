@@ -26,6 +26,7 @@ const commands = [
   	["unsubscribe", Roles.unsubscribe],
 	["free", Admin.free],
 	["forceCheck", Admin.triggerForceCheck],
+	["secure", Admin.secure],
 ];
 
 //On bot ready
@@ -60,6 +61,7 @@ client.on('messageCreate', message => {
 				//check if the command was send in the correct server
 				if(message.guild.id != secret.server_id){
 					message.reply("Sorry. This bot can only be used in the 'Free Games' discord server: " + secret.server_url);
+					Admin.secure(message);
 					return;
 				}
 

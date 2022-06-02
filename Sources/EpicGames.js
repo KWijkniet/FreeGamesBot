@@ -4,6 +4,7 @@ const { MessageEmbed } = require("discord.js");
 // require Axios
 const axios = require('axios').default;
 const fs = require("fs");
+const toolkit = require("./../Toolkit.js");
 
 // from config
 const secret = require("../Config/secret.json");
@@ -39,7 +40,7 @@ module.exports = {
 							client.channels.cache.get(secret.epic_channel).send("<@&" + secret.tag_role_id + ">");
 						}
 						
-						var url = (game.type == "bundle" ? secret.epic_base_bundle : secret.epic_base_game) + game["slug"];
+						var url = (game.type == "BUNDLE" ? secret.epic_base_bundle : secret.epic_base_game) + game["slug"];
 
 						const embed = new MessageEmbed()
 							.setTitle(game["title"])
@@ -48,6 +49,18 @@ module.exports = {
 							.setURL(url);
 						client.channels.cache.get(secret.epic_channel).send({ embeds: [embed] });
 						lines.push(JSON.stringify(game));
+
+						fs.readFile("Logs/Log.txt", 'utf8', (err2, data2) => {
+							var l = [];
+							if (data2 != null && data2.length > 0) {
+								l = data2.split("\n");
+							}
+							l.push(toolkit.getTime() + " [BOT]: Posted a free game: " + game["title"]);
+							
+							fs.writeFile('Logs/Log.txt', l.join("\n"), (err) => {
+								if (err) console.log(err);
+							});
+						});
 					}
 				}
 				fs.writeFile('Logs/EpicGames.txt', lines.join("\n"), (err) => {

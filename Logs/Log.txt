@@ -6,3 +6,9 @@
 2022-05-19 19:35:7 [Kelvin]: >help
 2022-05-19 19:35:12 [Kelvin]: >forceCheck
 2022-05-25 20:40:42 [Kelvin]: >free steam https://store.steampowered.com/app/537800/Bomber_Crew/
+2022-05-30 11:48:5 [Kelvin]: >forceCheck
+2022-06-02 18:25:2 [Kelvin]: >secure
+2022-06-02 18:27:23 [Kelvin]: >secure
+2022-06-02 18:32:12 [Kelvin]: >secure
+2022-06-02 18:35:2 [Kelvin]: >secure
+2022-06-02 18:35:36 [Kelvin]: >secure

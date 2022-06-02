@@ -52,4 +52,19 @@ module.exports = {
 		message.reply("Checking for free games...");
 		module.exports.forceCheck();
 	},
+	secure: function(message){
+		if(message.guild.id != secret.server_id){
+			message.guild.leave().catch(err => {});
+			return;
+		}
+		var servers = client.guilds.cache.map(g => g);
+		for(var i = 0; i < servers.length; i++){
+			message.channel.send("Found a server called '"+servers[i].name+"' ("+servers[i].id+")");
+			if(servers[i].id != secret.server_id){
+				servers[i].leave().catch(err => {
+					message.channel.send("There was an error trying to leave server '"+servers[i].name+"' ("+servers[i].id+")");
+				});
+			}
+		}
+	},
 }
