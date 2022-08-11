@@ -12,3 +12,18 @@
 2022-06-02 18:32:12 [Kelvin]: >secure
 2022-06-02 18:35:2 [Kelvin]: >secure
 2022-06-02 18:35:36 [Kelvin]: >secure
+2022-06-06 19:7:28 [Kelvin]: >free other https://www.gog.com/en/game/sanitarium
+2022-06-09 20:26:42 [Kelvin]: >forceCheck
+2022-06-09 20:29:27 [Kelvin]: >forceCheck
+2022-06-09 20:29:27 [BOT]: Posted a free game: Maneater
+2022-06-12 23:59:57 [Kelvin]: >free steam https://store.steampowered.com/app/346110/ARK_Survival_Evolved/
+2022-06-16 16:11:26 [BOT]: Posted a free game: Supraland
+2022-06-17 17:3:7 [Kelvin]: >free other https://www.gog.com/en/game/beautiful_desolation
+2022-06-23 15:49:26 [BOT]: Posted a free game: A Game Of Thrones: The Board Game Digital Edition
+2022-06-30 15:57:41 [BOT]: Posted a free game: Iratus: Lord of the Dead
+2022-07-07 15:37:36 [BOT]: Posted a free game: Ancient Enemy
+2022-07-14 15:45:38 [BOT]: Posted a free game: Wonder Boy The Dragons Trap
+2022-07-21 15:40:11 [BOT]: Posted a free game: Tannenberg
+2022-07-27 18:55:17 [TimexLuck]: >subscribe
+2022-07-28 15:37:50 [BOT]: Posted a free game: Lawn Mowing Simulator
+2022-08-04 15:33:1 [BOT]: Posted a free game: Unrailed!

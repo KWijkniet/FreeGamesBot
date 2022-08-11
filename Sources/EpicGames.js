@@ -90,7 +90,7 @@ module.exports = {
 					if (result.originalPrice > 0 && result.discountedPrice == 0) {
 						returnData.push(result);
 					}
-					else if (items.length <= 6 && elem["promotions"]["promotionalOffers"].length > 0) {
+					else if (items.length <= 6 && elem["promotions"] != null && elem["promotions"]["promotionalOffers"].length > 0) {
 						returnData.push(result);
 					}
 				}
