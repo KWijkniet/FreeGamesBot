@@ -1,5 +1,4 @@
 const http = require("http");
-http.createServer((_, res) => res.end("Alive")).listen(8080);
 
 //require the necessary discord.js classes
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
@@ -35,6 +34,7 @@ client.once("ready", () => {
 	client.user.setUsername(config.botName);
 	client.user.setActivity(">help", { type: "LISTENING" });
 	console.log("The bot is running. Press CTRL + C to stop the bot.");
+	http.createServer((_, res) => res.end("Alive")).listen(8080);
 });
 
 //On user join
@@ -67,7 +67,6 @@ client.on('messageCreate', message => {
 				}
 
 				//Log command
-
 				fs.readFile("Logs/Log.txt", 'utf8', (err2, data) => {
 					var lines = [];
 					if (data != null && data.length > 0) {
@@ -94,4 +93,6 @@ setInterval(() => {
 	Admin.forceCheck();
 }, 1000 * 60 * 60 * 1) // each hour
 
+//If code doesn't go past this line. Execute "kill 1" in replit
+//client.login(secret.token);
 client.login(secret.token);
