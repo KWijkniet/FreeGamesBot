@@ -36,3 +36,100 @@
 2022-08-29 21:13:3 [Kelvin]: >free other https://www.gog.com/en/game/lovecrafts_untold_stories
 2022-08-29 21:14:17 [Kelvin]: >free other https://www.gog.com/en/game/lovecrafts_untold_stories
 2022-08-29 21:31:2 [Kelvin]: >free other https://www.gog.com/en/game/lovecrafts_untold_stories
+2022-09-01 15:4:55 [BOT]: Posted a free game: Submerged: Hidden Depths
+2022-09-01 15:40:55 [Ludo]: >subscribe
+2022-09-01 23:36:33 [Kelvin]: >free steam https://store.steampowered.com/app/40990/Mafia/
+2022-09-02 16:49:26 [Kelvin]: >free other https://www.gog.com/game/immortal_redneck
+2022-09-08 20:54:39 [Kelvin]: >forceCheck
+2022-09-08 20:54:40 [BOT]: Posted a free game: Realm Royale Reforged Epic Launch Bundle
+2022-09-15 21:58:33 [Kelvin]: >forceCheck
+2022-09-15 21:58:34 [BOT]: Posted a free game: Spirit of the North
+2022-09-18 11:47:50 [Hyawii]: >subscribe
+2022-09-22 17:11:8 [Kelvin]: >forceCheck
+2022-09-22 17:11:8 [BOT]: Posted a free game: Gloomhaven
+2022-09-29 20:3:35 [Kelvin]: >forceCheck
+2022-09-29 20:3:36 [BOT]: Posted a free game: Runbow
+2022-10-06 20:7:37 [Kelvin]: >forceCheck
+2022-10-06 20:7:38 [BOT]: Posted a free game: Slain: Back From Hell
+2022-10-13 15:24:23 [BOT]: Posted a free game: Darkwood
+2022-10-20 18:58:11 [Kelvin]: >forceCheck
+2022-10-20 18:58:11 [BOT]: Posted a free game: Evoland Legendary Edition
+2022-10-20 19:2:8 [Kelvin]: >free other https://www.gog.com/game/wolfenstein_enemy_territory
+2022-10-28 18:22:28 [Kelvin]: >forceCheck
+2022-10-28 18:22:30 [BOT]: Posted a free game: Saturnalia
+2022-11-03 17:29:54 [Kelvin]: >free other https://www.fanatical.com/en/game/internet-cafe-simulator
+2022-11-03 17:30:3 [Kelvin]: >forceCheck
+2022-11-03 17:30:4 [BOT]: Posted a free game: Filament
+2022-11-03 20:28:23 [Kelvin]: >free steam https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/
+2022-11-10 20:58:57 [BOT]: Posted a free game: Alba - A Wildlife Adventure
+2022-11-10 21:3:15 [Kelvin]: >forceCheck
+2022-11-10 21:21:35 [Kelvin]: >forceCheck
+2022-11-10 21:22:50 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/shadow-tactics
+2022-11-10 21:22:59 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/alba-a-wildlife-adventure-93736a
+2022-11-17 16:35:8 [BOT]: Posted a free game: Evil Dead: The Game
+2022-11-24 16:5:1 [Kelvin]: >forceCheck
+2022-11-24 16:5:2 [BOT]: Posted a free game: STAR WARS™: Squadrons
+2022-12-01 16:7:41 [BOT]: Posted a free game: RPG in a Box
+2022-12-08 16:26:45 [BOT]: Posted a free game: Saints Row IV Re-Elected
+2022-12-15 16:3:14 [BOT]: Posted a free game: Bloons TD 6
+2022-12-15 18:36:20 [Kelvin]: >forceCheck
+2022-12-15 18:46:27 [Kelvin]: >forceCheck
+2022-12-15 18:52:58 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/bloons-td-6-bf95a0
+2022-12-15 18:59:45 [Kelvin]: >forceCheck
+2022-12-15 19:0:0 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/bloons-td-6-bf95a0
+2022-12-16 16:39:47 [BOT]: Posted a free game: Horizon Chase Turbo
+2022-12-17 12:40:1 [Kelvin]: >free other https://www.gog.com/en/game/king_of_seas
+2022-12-17 16:6:7 [BOT]: Posted a free game: Costume Quest 2
+2022-12-18 16:45:42 [BOT]: Posted a free game: Sable
+2022-12-19 16:26:12 [BOT]: Posted a free game: Them's Fightin' Herds
+2022-12-20 16:39:36 [BOT]: Posted a free game: Wolfenstein: The New Order
+2022-12-21 16:45:5 [BOT]: Posted a free game: LEGO® Builder's Journey
+2022-12-22 16:40:4 [BOT]: Posted a free game: Fallout Tactics: Brotherhood of Steel
+2022-12-23 16:13:32 [BOT]: Posted a free game: Encased
+2022-12-23 19:14:59 [Kelvin]: >forceCheck
+2022-12-23 19:18:15 [Kelvin]: >forceCheck
+2022-12-23 19:18:47 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/encased
+2022-12-24 16:35:49 [BOT]: Posted a free game: Metro Last Light Redux
+2022-12-25 16:52:54 [BOT]: Posted a free game: DEATH STRANDING DIRECTOR'S CUT
+2022-12-25 18:57:34 [BOT]: Posted a free game: DEATH STRANDING
+2022-12-26 16:6:15 [BOT]: Posted a free game: F.I.S.T.: Forged In Shadow Torch
+2022-12-27 16:6:44 [BOT]: Posted a free game: Severed Steel
+2022-12-28 16:22:27 [BOT]: Posted a free game: Mortal Shell
+2022-12-29 16:9:25 [BOT]: Posted a free game: Dishonored - Definitive Edition
+2023-01-05 15:56:57 [BOT]: Posted a free game: Dishonored - Definitive Edition
+2023-01-05 16:56:57 [BOT]: Posted a free game: Kerbal Space Program
+2023-01-06 22:28:24 [Kelvin]: >forceCheck
+2023-01-06 22:39:54 [Kelvin]: >forceCheck
+2023-01-06 22:40:35 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/kerbal-space-program
+2023-01-06 22:40:40 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/shadow-tactics-aikos-choice-5678c1
+2023-01-07 22:22:41 [Zilverskye]: >subscribe
+2023-01-12 16:19:10 [BOT]: Posted a free game: Divine Knockout
+2023-01-19 17:3:43 [BOT]: Posted a free game: Epistory - Typing Chronicles
+2023-01-26 16:37:11 [BOT]: Posted a free game: Hell is Others
+2023-01-27 20:54:8 [Kelvin]: >forceCheck
+2023-01-27 20:54:45 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/adios-b378b4
+2023-01-27 20:54:55 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/hell-is-others-789262
+2023-02-02 16:37:6 [BOT]: Posted a free game: Dishonored®: Death of the Outsider™
+2023-02-09 15:13:3 [BOT]: Posted a free game: Dishonored®: Death of the Outsider™
+2023-02-09 16:13:3 [BOT]: Posted a free game: Recipe for Disaster
+2023-02-17 9:14:37 [Kelvin]: >forceCheck
+2023-02-17 9:15:27 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/warpips-57e2c4
+2023-02-22 14:7:34 [BOT]: Posted a free game: Warpips
+2023-02-23 16:27:2 [BOT]: Posted a free game: Duskers
+2023-03-02 16:25:20 [BOT]: Posted a free game: Rise of Industry
+2023-03-02 19:30:47 [Kelvin]: >free steam https://store.steampowered.com/app/493540/Figment/
+2023-03-09 16:3:9 [BOT]: Posted a free game: Call of the Sea
+2023-03-16 14:53:52 [BOT]: Posted a free game: World of Warships — Starter Pack: Ishizuchi
+2023-03-21 10:29:38 [Kelvin]: >free epic https://store.epicgames.com/en-US/p/warhammer-40000-gladius-relics-of-war
+2023-03-23 15:34:19 [BOT]: Posted a free game: Chess Ultra
+2023-03-30 15:35:55 [BOT]: Posted a free game: The Silent Age
+2023-04-06 15:1:32 [BOT]: Posted a free game: shapez
+2023-04-13 15:29:1 [BOT]: Posted a free game: MORDHAU
+2023-04-14 21:55:24 [BOT]: Posted a free game: MORDHAU
+2023-04-20 14:52:23 [BOT]: Posted a free game: MORDHAU
+2023-04-20 15:52:23 [BOT]: Posted a free game: Never Alone (Kisima Ingitchuna)
+2023-04-27 15:8:11 [BOT]: Posted a free game: Poker Club
+2023-05-04 15:21:8 [BOT]: Posted a free game: Against All Odds
+2023-05-11 15:42:44 [BOT]: Posted a free game: The Sims™ 4 The Daring Lifestyle Bundle
+2023-05-18 15:10:53 [BOT]: Posted a free game: DEATH STRANDING
+2023-05-27 23:5:47 [BOT]: Posted a free game: Fallout: New Vegas - Ultimate Edition

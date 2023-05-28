@@ -3,7 +3,7 @@ const http = require("http");
 //require the necessary discord.js classes
 const { Client, Intents, MessageEmbed, Permissions } = require("discord.js");
 //create a new client instance
-global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+//global.client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 var client = global.client;
 
 const toolkit = require("./Toolkit.js");
@@ -34,7 +34,13 @@ client.once("ready", () => {
 	client.user.setUsername(config.botName);
 	client.user.setActivity(">help", { type: "LISTENING" });
 	console.log("The bot is running. Press CTRL + C to stop the bot.");
-	http.createServer((_, res) => res.end("Alive")).listen(8080);
+
+	//http.createServer((_, res) => res.end("Alive")).listen(8080);
+
+	//Auto check the websites for new free games
+	setInterval(() => {
+		Admin.forceCheck();
+	}, 1000 * 60 * 60 * 1) // each hour
 });
 
 //On user join
@@ -87,11 +93,6 @@ client.on('messageCreate', message => {
 		//message.reply("Unknown command. Please type " + prefix + "help for all the commands");
 	}
 });
-
-//Auto check the websites for new free games
-setInterval(() => {
-	Admin.forceCheck();
-}, 1000 * 60 * 60 * 1) // each hour
 
 //If code doesn't go past this line. Execute "kill 1" in replit
 //client.login(secret.token);
